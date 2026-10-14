@@ -1,0 +1,39 @@
+:root{
+  --bg:#fdf8f1; --panel:#ffffff; --ink:#33231a; --muted:#8a7261;
+  --red:#9c2b2b; --gold:#c98f2d; --green:#3f6212; --line:#eee0cd;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.6}
+.hero{text-align:center;padding:4.5rem 1.25rem 3rem;background:linear-gradient(160deg,#5b1d1d,#9c2b2b 55%,#c98f2d 130%);color:#fdf3e3}
+.eyebrow{letter-spacing:.3em;text-transform:uppercase;font-size:.8rem;color:#f4d492}
+.hero h1{font-size:clamp(2.4rem,6vw,3.8rem);font-weight:500;margin:.5rem 0}
+.sub{max-width:600px;margin:0 auto 1.6rem;font-style:italic;color:#f7e6cd}
+.btn{display:inline-block;background:#fdf3e3;color:#7c1d1d;font-weight:700;padding:.7rem 1.7rem;border-radius:999px;text-decoration:none;font-family:inherit}
+.topnav{position:sticky;top:0;background:rgba(253,248,241,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);display:flex;justify-content:center;gap:2rem;padding:.8rem}
+.topnav a{color:var(--red);text-decoration:none;font-weight:600}
+main{max-width:1040px;margin:0 auto;padding:2.5rem 1.25rem 3rem}
+.section-title{font-size:1.9rem;font-weight:500;text-align:center;margin-bottom:1.4rem;color:var(--red)}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin-bottom:1.6rem}
+.chips button{font-family:inherit;cursor:pointer;background:var(--panel);color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:.4rem 1rem;font-size:.92rem}
+.chips button.active{background:var(--red);color:#fff;border-color:var(--red)}
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.1rem}
+.dish{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:1.3rem;box-shadow:0 3px 14px rgba(156,43,43,.05)}
+.dish .row{display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
+.dish h3{font-size:1.15rem}
+.dish .am{color:var(--muted);font-style:italic;font-size:.95rem}
+.price{color:var(--gold);font-weight:700;white-space:nowrap}
+.dish p{color:#5c4636;font-size:.95rem;margin-top:.4rem}
+.tags{display:flex;gap:.4rem;margin-top:.6rem;flex-wrap:wrap}
+.tag{font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;padding:.15rem .6rem;border-radius:999px;background:#f6ead3;color:#7c5a10}
+.tag.veg{background:#e7efdb;color:var(--green)}
+.tag.spicy{background:#f9e0e0;color:var(--red)}
+.menu-note{text-align:center;color:var(--muted);font-style:italic;margin-top:1.8rem;max-width:640px;margin-inline:auto}
+.story{max-width:720px;margin:3.5rem auto 0}
+.story p{margin-bottom:1rem;color:#4c382b}
+.visit{margin-top:3.5rem}
+.visit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.1rem}
+.visit-card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:1.4rem}
+.visit-card h3{margin-bottom:.5rem;font-size:1.05rem}
+.placeholder{color:var(--red);background:#fdf0ec;border:1px dashed #d9a05a;border-radius:8px;padding:.35rem .6rem;margin-bottom:.5rem;font-size:.92rem}
+footer{text-align:center;color:var(--muted);padding:2rem 1.25rem 3rem;border-top:1px solid var(--line);font-size:.9rem;max-width:1040px;margin:0 auto}
+.tagline{color:var(--gold);margin-top:.6rem;font-style:italic}
